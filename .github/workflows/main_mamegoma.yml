@@ -31,5 +31,5 @@ jobs:
       with:
         app-name: 'mamegoma'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_94fd8fcab7dc487fa10cb8ab6060b313 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_1e941c83d0f7483ca0fc6f6387d7820b }}
         package: .
