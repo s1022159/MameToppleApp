@@ -95,12 +95,16 @@ function signalRConnection(vm) {
             connection.invoke("GetDollsTower");
             connection.on("GetDollsTower", function (dollsTower) {
                 vm.dollsTowerData = dollsTower;
+                console.log(JSON.stringify(dollsTower));
+                
             });
 
             connection.invoke("GetCards");
 
             connection.on("GetCards", function (cards) {
                 vm.cardsData = cards;
+                console.log(JSON.stringify(cards));
+
             });
 
             vm.signalRConnectionInstance = connection;
